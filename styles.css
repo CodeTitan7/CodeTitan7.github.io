@@ -1,0 +1,80 @@
+/* styles.css */
+
+/* Body styles */
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #f2e6da; /* Light beige background */
+}
+
+/* Header styles */
+header {
+  background-color: #704139; /* Dark brown header background */
+  color: #f2e6da; /* Light beige text color */
+  padding: 20px;
+  text-align: center;
+  font-size: 36px; /* Larger font size for header */
+}
+
+/* Navigation styles */
+nav {
+  background-color: #4e3d36; /* Dark brown navigation background */
+  color: #f2e6da; /* Light beige text color */
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f2e6da; /* Light beige link color */
+  margin: 0 10px;
+  font-size: 18px; /* Larger font size for navigation links */
+}
+
+/* Section styles */
+.section {
+  padding: 50px 20px; /* Increased padding for sections */
+  background-color: #d6b8a6; /* Light brown section background */
+  color: #4e3d36; /* Dark brown text color */
+}
+
+/* Project styles */
+.project {
+  background-color: #f2e6da; /* Light beige project background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #704139; /* Dark brown footer background */
+  color: #f2e6da; /* Light beige text color */
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-content div {
+  flex: 1;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #f2e6da; /* Light beige text color */
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #ccc; /* Light gray on hover */
+}
+
+/* Add animations or additional styling as desired */
