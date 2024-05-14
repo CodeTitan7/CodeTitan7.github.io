@@ -10,43 +10,43 @@ header {
   color: #f2e6da;
   padding: 20px;
   text-align: center;
-  font-size: 36px;
+  font-size: 3vw;
 }
 
 nav {
   background-color: #4e3d36;
   color: #f2e6da;
   text-align: center;
-  padding: 10px;
+  padding: 1.5vw;
 }
 
 nav a {
   text-decoration: none;
   color: #f2e6da;
-  margin: 0 10px;
-  font-size: 18px;
+  margin: 0 2vw;
+  font-size: 1.5vw;
 }
 
 .section {
-  padding: 50px 20px;
+  padding: 5vw 2vw;
   background-color: #d6b8a6;
   color: #4e3d36;
 }
 
 .project {
   background-color: #f2e6da;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 600px;
+  border-radius: 1vw;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+  padding: 2vw;
+  margin: 2vw auto;
+  max-width: 90vw;
 }
 
 footer {
   background-color: #704139;
   color: #f2e6da;
   text-align: center;
-  padding: 20px;
+  padding: 3vw;
 }
 
 .footer-content {
@@ -60,7 +60,7 @@ footer {
 
 .social-media a {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 2vw;
   color: #f2e6da;
   text-decoration: none;
 }
@@ -73,12 +73,49 @@ button {
   background-color: #704139;
   color: #f2e6da;
   border: none;
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 1vw 2vw;
+  font-size: 1.5vw;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #4e3d36;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    font-size: 5vw;
+  }
+
+  nav {
+    padding: 3vw;
+  }
+
+  nav a {
+    font-size: 3vw;
+    margin: 0 3vw;
+  }
+
+  .section {
+    padding: 10vw 5vw;
+  }
+
+  .project {
+    padding: 5vw;
+    margin: 5vw auto;
+  }
+
+  footer {
+    padding: 5vw;
+  }
+
+  .social-media a {
+    margin: 0 3vw;
+  }
+
+  button {
+    padding: 3vw 5vw;
+    font-size: 3vw;
+  }
 }
