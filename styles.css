@@ -47,20 +47,23 @@ footer {
   color: #f2e6da;
   text-align: center;
   padding: 3vw;
+  margin-top: 2vw;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .footer-content div {
   flex: 1;
+  padding: 1vw;
 }
 
 .social-media a {
   display: inline-block;
-  margin: 0 2vw;
+  margin: 0 1vw;
   color: #f2e6da;
   text-decoration: none;
 }
