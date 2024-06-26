@@ -80,29 +80,6 @@
   </form>
   <p id="response-message"></p>
 </section>
-
-<script>
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-
-    fetch('https://script.google.com/macros/s/AKfycbzXP1rbXFQQmx8BHuwvf24r8Ik1OE50gwn31blwPgNobRh35SNWutd1VknhDvVKkku9AQ/exec', {
-      method: 'POST',
-      body: JSON.stringify({ EmailID:email, PhoneNumber:phone }),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('response-message').innerText = data;
-    })
-    .catch(error => console.error('Error:', error));
-  });
-</script>
-
   <footer>
   <div class="footer-content">
     <div class="copyright">
