@@ -48,7 +48,25 @@ function closeNav() {
   document.body.style.backgroundColor = "white";
 }
 
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
 
+    fetch('YOUR_WEB_APP_URL', {
+      method: 'POST',
+      body: JSON.stringify({ EmailID:email, PhoneNumber:phone }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('response-message').innerText = data;
+    })
+    .catch(error => console.error('Error:', error));
+  });
 
 
 
