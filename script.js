@@ -27,7 +27,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     return;
   }
 
-  fetch('YOUR_WEB_APP_URL', {
+  fetch('https://script.google.com/macros/s/AKfycbzXP1rbXFQQmx8BHuwvf24r8Ik1OE50gwn31blwPgNobRh35SNWutd1VknhDvVKkku9AQ/exec', {
     method: 'POST',
     body: JSON.stringify({ EmailID: email, PhoneNumber: phone }),
     headers: {
