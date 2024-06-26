@@ -54,7 +54,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
 
-    fetch('YOUR_WEB_APP_URL', {
+    fetch('https://script.google.com/macros/library/d/1Rp0dS3KWPg06aGnKaL7_KO9KQujmY5oBc7Mvl04V6ADom22t12z5ZEDa/1', {
       method: 'POST',
       body: JSON.stringify({ EmailID:email, PhoneNumber:phone }),
       headers: {
